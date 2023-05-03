@@ -1,6 +1,7 @@
 .top{
+    margin: 0px;
     width: 100%;
-    height: 85px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
 }
@@ -18,33 +19,64 @@ img{
     margin-left: 1px;
     vertical-align:middle;
     margin-bottom: 9px;
+    color: #454545;
+}
+.h1body sup{
+    font-size: 12px;
 }
 header{
-    background-color: black;
     width: 100%;
-    height: 150px;
+    height: 200px;
+    background-image: url(responsive_big_webp_JMF96ETfn1kSViVnUou1Z0XIDwWcPpT5mrPc7-ytpAc.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+    color: white;
+}
+header h1{
+    position: absolute;
+    top: 100px;
+    left: 35%;
+    text-shadow: 6px 6px 2px darkgrey;
+}
+.aphead{
+    position: absolute;
+    top: 140px;
+    left: 18%;
+    font-weight: bold;
+    text-shadow: 6px 6px 4px darkgray;
+    font-size: 20px;
 
 }
-.NS{
-    background-color: aqua;
+.bphead{
+    position: absolute;
+    top: 170px;
+    left: 10%;
+    font-weight: bold; 
+    text-shadow: 6px 6px 4px darkgray;
+    font-size: 20px;
+}
+.S{
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
     width:100%;
-    height: 300px;
+    height: 1000px;
 }
-nav{
-    background-color: coral;
+.nav{
+    position:fixed;
+    top: 0;
+    right: -210px;
+    background-color: white;
     width: 200px;
-    height: 300px;
-}
-footer{
-    background-color: brown;
-    width: 100%;
-    height: 100px;
+    height: 100%;
+    transition: 1s;
+    z-index: 100;
 }
 .login{
     position: relative;
     text-align: right;
-    top: 20px;
-right: 55px;}
+    top: 25px;
+    right: 75px;}
 .zerlog{
     width: 85px;
     height: 35px;
@@ -59,10 +91,539 @@ right: 55px;}
     color: green;
     font-size: 20px;
 }
-.search input{
+input[type="search"]{
     position: absolute;
-    left: 1020px;
-    bottom: 600px;
+    left: 35%;
+    top: 38px;
+    font-weight: bold;
+    height: 30px;
+    width: 450px;
+    background-image: url(download.png);
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 15px;
+    border-radius: 7px;
+}
+input[type="search"]::-webkit-search-cancel-button{
+    -webkit-appearance: none;}
+#troisligne{
+    display: flex;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1001;
+}
+.a{
+    
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    margin-top: 0px;
+    border-radius: 50%;
+}
+.b{
+    margin-top: 4px;
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    border-radius: 50%;
+}
+.c{
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    margin-top: 4px;
+    border-radius: 50%;
+}
+#troisligne:hover{
+    background: #eeeeee;
+    opacity: 1;
+    transition: 1s;
+    cursor: pointer;
+}
+.nav.active{
+    right: 0;
+}
+.hnav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: white;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+.hnav p sup{
+    font-size: 7px;
+}
+.hnav p{
+    cursor: pointer;
+}
+.hnav img{
+    cursor: pointer;
+}
+.home{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 7px;
+    background-image: url(images__1_-removebg-preview.png);
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    background-position: 155px 10px ;
+    background-color: #eee;
+    border-left: solid 5px rgba(28, 29, 29, 0.774);
+}
+.home1{
+    text-decoration: none;
+}
+.home1 p{
+    display: inline;
+    font-size: 22px;
+    position: relative;
+    top: 15px;
+    left: 90px;
+    font-weight: bold;
+    color: #000;
+}
+.action{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-left: solid 5px rgba(28, 29, 29, 0.774);
+    margin-left: 5px;
+    margin-top: 5px;
+    background-image: url(action.png);
+    background-size: 45px 35px;
+    background-repeat: no-repeat;
+    background-position: 140px 7px;
+}
+.action:hover{
+    background-color: #eee;
+}
+.action1{
+    text-decoration: none;
+}
+.action1 p{
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 70px;
+    color: #000;
+    font-size: 22px;
     font-weight: bold;
 }
+.Cooking{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-left: solid 5px rgba(28, 29, 29, 0.774);
+    margin-left: 5px;
+    background-image: url(download__1_-removebg-preview.png);
+    background-size: 45px 35px;
+    background-repeat: no-repeat;
+    background-position: 140px 7px;
+}
+.Cooking:hover{
+    background-color: #eee;
+}
+.Cooking1{
+    text-decoration: none;
+}
+.Cooking1 p{
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 55px;
+}
+.Sports{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-left: solid 5px rgba(28, 29, 29, 0.774);
+    margin-left: 5px;
+    background-image: url(images__2_-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 35px 30px;
+    background-position: 145px 10px;
+}
+.Sports:hover{
+    background-color: #eee;
+}
+.Sports1{
+    text-decoration: none;
+}
+.Sports1 p{
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 75px;
+}
+.ScienceFiction{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-left: solid 5px rgba(28, 29, 29, 0.774);
+    margin-left: 5px;
+    background-image: url(s-ficion-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 45px 35px;
+    background-position: 140px 7px;
+}
+.ScienceFiction:hover{
+    background-color: #eee;
+}
+.ScienceFiction1{
+    text-decoration: none;
+}
+.ScienceFiction1 p{
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 45px;
+}
+.Horror{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-left: solid 5px rgba(28, 29, 29, 0.774);
+    margin-left: 5px;
+    background-image: url(download__2_-removebg-preview.png);
+    background-size: 45px 35px;
+    background-repeat: no-repeat;
+    background-position: 140px 7px;
+}
+.Horror:hover{
+    background-color: #eee;
+}
+.Horror1{
+    text-decoration: none;
+}
+.Horror1 p{
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 67px;
+}
+.Comedy{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-left: solid 5px rgba(28, 29, 29, 0.774);
+    margin-left: 5px;
+    background-image: url(comedy-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 45px 35px;
+    background-position: 140px 7px;
+}
+.Comedy:hover{
+    background-color: #eee;
+}
+.Comedy1{
+    text-decoration: none;
+}
+.Comedy1 p{
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 55px;
+}
+.Romantic{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-left: solid 5px rgba(28, 29, 29, 0.774);
+    margin-left: 5px;
+    background-image: url(romatic-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 45px 35px;
+    background-position: 140px 7px;
+}
+.Romantic:hover{
+    background-color: #eee;
+}
+.Romantic1{
+    text-decoration: none;
+}
+.Romantic1 p{
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 45px;
+}
+.Philosophy{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-left: solid 5px rgba(28, 29, 29, 0.774);
+    margin-left: 5px;
+    background-image: url(4389297-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 45px 35px;
+    background-position: 140px 7px;
+}
+.Philosophy:hover{
+    background-color: #eee;
+}
+.Philosophy1{
+    text-decoration: none;
+}
+.Philosophy1 p{
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 31px;
+}
+.Literature{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-left: solid 5px rgba(28, 29, 29, 0.774);
+    margin-left: 5px;
+    background-image: url(literat-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 45px 25px;
+    background-position: 140px 7px;
+}
+.Literature:hover{
+    background-color: #eee;
+}
+.Literature1{
+    text-decoration: none;
+}
+.Literature1 p{
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 35px;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    pointer-events: none;
+}
+.nav.active~.overlay{
+    background: rgba(0, 0, 0, 0.7);
+}
+.section{
+    width: 100%;
+    height: 1000px;
+}
+section h1{
+    padding-left: 10px;
+}
+section p{
+    font-size: 17px;
+    font-weight: 600;
+    padding-left: 25px;
+}
+.section h2{
+    padding-left: 10px;
+}
+.linebook1{
+    width: 100%;
+    height: 320px;
+    display: flex;
+}
+.linebook11{
+    width:220px;
+    height: 320px;
+    margin-left: 35px;
+    background-color: rgb(4, 4, 80);
+}
+.linebook111{
+    display: flex;
+    justify-content: flex-start;
+}
+.a1{
+    width: 100px;
+    height: 150px;
+    padding-left: 12px;
+    border: #fff 1px solid;
+}
+.p11{
+    text-align: center;
+    font-weight: 900;
+    color: white;
+}
+.p21{
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+}
+.p211{
+    position: relative;
+    bottom: 10px;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 11px;
+}
+.linebook12{
+    width:220px;
+    height: 320px;
+    margin-left: 35px;
+    background-color: rgb(4, 4, 80);
+}
+.p12{
+    text-align: center;
+    font-weight: 900;
+    color: white;
+}
+.a2{
+    width: 100px;
+    height: 150px;
+    padding-left: 12px;
+    border: #fff 1px solid;
+}
+.linebook121{
+    display: flex;
+    justify-content: flex-start;
+}
+.p22{
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 10px;
+}
+.p23{
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 10px;
+}
+.price1{
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    left: 60px;
+    font-size: 12px;
+    color:green;
+}
+.price2{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    left: 60px;
+    font-size: 12px;
+    color:green;
+}
+.price4{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    left: 60px;
+    font-size: 13px;
+    color:green;
+}
+.p56{
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 9px;
+}
+.price5{
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    left: 60px;
+    font-size: 13px;
+    color:green;
+}
+.price6{
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+    left: 60px;
+    font-size: 13px;
+    color:green;
+}
+.linebook2{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    margin-top: 15px;
+}
+.linebook11.active{
+    width: 700px;
+    height: 400px;
+    background-color: #000;
+    border-radius: 25px;
+    z-index: 1000;
+    transition: 1s;
+}
+.linebook12.active{
+    width: 700px;
+    height: 400px;
+    background-color: #000;
+    border-radius: 25px;
+    z-index: 1000;
+    transition: 1s;
+}
+.linebook11.active p{
+    font-size: 16px;
+}
+.linebook11.active img{
+    width: 200px;
+    height: 200px;
+}
+.linebook12.active p{
+    font-size: 16px;
+}
+.linebook12.active img{
+    width: 200px;
+    height: 200px;
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #000 ;
+}
+.ulfoot{
+    list-style: none;
+    color: #fff;
 
+}
+.ulfoot a{
+    text-decoration:none ;
+    color: #fff;
+}
