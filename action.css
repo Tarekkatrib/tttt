@@ -381,7 +381,7 @@ h1{
 }
 .linebook1{
     width: 100%;
-    height: 350px;
+    height: auto;
     display: flex;
 }
 .linebook11{
