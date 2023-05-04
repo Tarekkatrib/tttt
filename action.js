@@ -13,11 +13,11 @@ let booksName= Array.from(p11Elements).map(function(bookName){
 });
 function search(query){
     for(let i=0;i<booksName.length;i++){
-        if(booksName[i].indexOf(query)||query==""){
-            p11Elements[i].parentNode.parentNode.parentNode.style.display="inline-block";
+        if(booksName[i].toLowerCase().startsWith(query.toLowerCase())||query==""){
+            p11Elements[i].parentNode.style.display="inline-block";
         }
         else{
-            p11Elements.parentNode.parentNode.parentNode.style.display="none";
+            p11Elements[i].parentNode.style.display="none";
         }
     }
 }
